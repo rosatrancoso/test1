@@ -1,0 +1,13 @@
+test1:
+  build: .
+  image: test1
+  tty: True
+  ports:
+    - 8888:8888
+  volumes:
+    - $PWD:/home/jovyan/work
+  environment:
+    - JUPYTER_ENABLE_LAB=yes
+    - NB_UID=`id -u`
+    - NB_GID=`id -g`
+

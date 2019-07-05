@@ -4,3 +4,4 @@ pandas
 xarray
 matplotlib
 cartopy
+smart_open
