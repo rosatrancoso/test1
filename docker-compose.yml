@@ -1,6 +1,7 @@
-test1:
+# export UID=`id -u`; export GID=`id -g`; docker-compose up -d
+
+test_jupyter:
   build: .
-  image: test1
   tty: True
   ports:
     - 8888:8888
@@ -8,6 +9,6 @@ test1:
     - $PWD:/home/jovyan/work
   environment:
     - JUPYTER_ENABLE_LAB=yes
-    - NB_UID=`id -u`
-    - NB_GID=`id -g`
+    - NB_UID=$UID #$(id -u)
+    - NB_GID=$GID #(id -g)
 
