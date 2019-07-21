@@ -3,6 +3,11 @@ LABEL maintainer="Rosa Trancoso <rosatrancoso@gmail.com>"
 
 USER root
 
-ADD requirements.txt /tmp
-RUN conda install --file /tmp/requirements.txt &&\
-    conda install vim
+RUN conda install --yes \
+        vim \
+        xarray \
+        s3fs \
+        smart_open \
+        cartopy
+    conda clean --all -f -y
+

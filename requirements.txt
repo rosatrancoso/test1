@@ -1,9 +1,0 @@
-numpy
-scipy
-pandas
-xarray
-matplotlib
-cartopy
-smart_open
-s3fs
-
