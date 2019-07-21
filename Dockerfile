@@ -8,6 +8,6 @@ RUN conda install --yes \
         xarray \
         s3fs \
         smart_open \
-        cartopy
+        cartopy &&\
     conda clean --all -f -y
 
