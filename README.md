@@ -2,6 +2,8 @@
 
 Set of notebooks for portable testing with https://gke.mybinder.org/
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rosatrancoso/test_jupyter/test1_simple)
+
 
 # export UID=`id -u`; export GID=`id -g`; docker-compose up -d
 
